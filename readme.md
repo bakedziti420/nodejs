@@ -33,8 +33,8 @@ JavaScript has been a computer language exclusive to the browser; that is, until
 <!-- call out the skills that are prerequisites -->
 *Before this workshop, developers should already be able to:*
 
-* Navigate the terminal
-* Have a proficiency in JavaScript
+* **Navigate** the terminal
+* **Demonstrate** a proficiency in JavaScript
 
 <!-- 9:05 10 minutes -->
 ## What is Node?
