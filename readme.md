@@ -1,9 +1,14 @@
 <!--
 	creator: Ilias Tsangaris
 	market: SF
+	adapted by: Zeb Girouard
+	market: DEN
 -->
 
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
+
+<!--9:00 5 min -->
+<!-- Hook: So the name of this class is Web Development Immersive, and we're supposed to teach full-stack web development.  Raise your hand if you're tired of staying on the front end.  Welcome to the back-end, welcome to Node.-->
 
 # NodeJS
 
@@ -17,12 +22,12 @@ JavaScript has been a computer language exclusive to the browser; that is, until
 <!-- specific/measurable goal for students to achieve -->
 *After this workshop, developers will be able to:*
 
-* Explain what Node is & why it exists
-* Compare and contrast Node's API with the DOM's API
-* Write simple assertion tests in Node
-* Perform file I/O in Node
-* Spin up a simple web server using node
-* Use organize code into modules and require it where necessary
+* **Explain** what Node is & why it exists
+* **Compare** and **contrast** Node's API with the DOM's API
+* **Write** simple assertion tests in Node
+* **Perform** file I/O in Node
+* **Spin up** a simple web server using node
+* **Organize** code into modules and require it where necessary
 
 ### Where should we be now?
 <!-- call out the skills that are prerequisites -->
@@ -31,9 +36,10 @@ JavaScript has been a computer language exclusive to the browser; that is, until
 * Navigate the terminal
 * Have a proficiency in JavaScript
 
+<!-- 9:05 10 minutes -->
 ## What is Node?
 
-The makers of Node took javascript (which normally only runs in the browser) and made it available in your computer (on the server side). They took Google's V8 JavaScript Engine and gave it the ability to compile JS programs into machine code.
+The makers of Node took javascript (which normally only runs in the browser) and made it available in your computer (on the server side). They took Google's V8 JavaScript Engine and gave it the ability to compile JS programs into machine code.  The first release was in 2009.
 
 #### Installing Node
 
@@ -41,7 +47,7 @@ To check if we already have Node installed, type: ``node -v`` in terminal. If no
 
 ####Ryan Dahl
 
-Ryan Dahl is the creator of Node. Here he [demonstrates](https://www.youtube.com/watch?v=jo_B4LTHi3I) the technology for one for one of the first times publicly.
+Ryan Dahl is the creator of Node. Here he [demonstrates](https://www.youtube.com/watch?v=jo_B4LTHi3I) the technology for one of the first times publicly.
 
 ####The Event Loop
 
@@ -57,6 +63,8 @@ Node really shines when it comes to heavy input-output type operations. This doe
 
 >Now, imagine the paperboy throwing the newspaper on your porch but never stopping his bicycle; 
 never stopping, he just keeps throwing papers on porches, so that by the time you pick it up he'll be 3 or 4 houses down. That would be _non-blocking_, or _asynchronous_.
+
+<!-- CFU Look at left-side of room and ask first person to say their name, and then ask the next person for their name, until they get to the end.  Time it.  Then ask everybody on the other side to say their names at the same time, but have to wait until I ask everyone.  Time that. -->
 
 ####Example of non-blocking code
 
@@ -88,6 +96,8 @@ node non-blocking-demo.js
 
 There are several different processes all happening simultaneously and asynchronously in tandem. One of the processes does not block any of the others. They all can run independently.
 
+<!-- 9:15 5 minutes -->
+
 #### Executing a JS program
 
 Write and execute some code in a file! In your working directory:
@@ -100,6 +110,8 @@ echo "console.log('hello world');" >> main.js
 node main.js
 # hello world!
 ```
+
+<!-- Turn it over to students with whiteboard instructions, stress that they should try to do it without looking at lecture. -->
 
 ## Node's API Intro
 
@@ -115,6 +127,8 @@ What parts of the API interest you? Let's write down a few modules that you'll h
 * File System
 * HTTP
 * Module
+
+<!--9:20 10 minutes -->
 
 ## Assert
 
@@ -154,6 +168,8 @@ assert.equal(exclaim("hello there"), "hello there!");
 // throws an error!
 ```
 
+<!-- Turn around laptops when done. -->
+
 > Challenge: How could we build the function `exclaim` so that our assertion test doesn't throw an error?
 
 <details><summary>Sample solution</summary>
@@ -162,6 +178,8 @@ assert.equal(exclaim("hello there"), "hello there!");
 function exclaim(phrase) { return phrase + "!" }
 ```
 </details>
+
+<!-- 9:30 10 minutes -->
 
 ## File I/O
 
@@ -193,7 +211,11 @@ fs.readFile('my-journal.txt', 'utf8', function(err, data) {
 });
 ```
 
+<!-- Turn around laptops when done. -->
+
 >Challenge: Use `fs` to write to a file called "dream-destination.txt" and fill it with the place you'd like to visit most in the world and why. Then read it back!
+
+<!--9:40 10 minutes -->
 
 ## HTTP Server
 
@@ -235,9 +257,11 @@ It will be the first IP address displayed.
 
 >Challenge: start a server on port 3000 that displays your name. Hit someone else's server from your computer.
 
+<!--9:50 10 minutes -->
+
 ## Code Organization
 
-Once our files start getting larger it will be import to split them out into separate **modules**. Let's create a script `randomizer.js` that will also contain a function with the same name. If we export it, we can require it in any other script. 
+Once our files start getting larger it will be important to split them out into separate **modules**. Let's create a script `randomizer.js` that will also contain a function with the same name. If we export it, we can require it in any other script. 
 
 **randomizer.js**
 
@@ -272,6 +296,8 @@ Now let's try `node lottery.js`. Did we win!?
 
 >Challenge: For the previous `server.js` example, split out the `handleRequests` function into a separate script and require it back into your server.
 
+<!--10:00 15 minutes -->
+
 ## Node's API Self-Exploration
 
 <!--
@@ -291,6 +317,7 @@ Suggested modules include (but not limited to):
 * Readline
 * URL
 
+<!--10:15 5 minutes -->
 
 ## Closing Thoughts
 
@@ -300,6 +327,9 @@ Suggested modules include (but not limited to):
 
 ## Additional Resources
 
+<!-- #3 is great explanation, and also explains why someone might do setTimeout of 0 -->
+
 * [What is npm?](https://www.youtube.com/watch?v=x03fjb2VlGY) (to be discussed next workshop)
 * [Ryan Dahl Demo](https://www.youtube.com/watch?v=jo_B4LTHi3I)
 * [Understanding the event loop](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+* [Explanation of Non-Blocking Code in Node](http://stackoverflow.com/questions/18040366/understanding-nodejs-non-blocking-io)
