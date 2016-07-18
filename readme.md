@@ -333,3 +333,7 @@ Suggested modules include (but not limited to):
 * [Ryan Dahl Demo](https://www.youtube.com/watch?v=jo_B4LTHi3I)
 * [Understanding the event loop](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 * [Explanation of Non-Blocking Code in Node](http://stackoverflow.com/questions/18040366/understanding-nodejs-non-blocking-io)
+
+## Licensing
+All content is licensed under a CC­BY­NC­SA 4.0 license.
+All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
