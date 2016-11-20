@@ -7,7 +7,7 @@
 
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
-<!--9:00 5 min -->
+<!--1:30 5 min -->
 <!-- Hook: So the name of this class is Web Development Immersive, and we're supposed to teach full-stack web development.  Raise your hand if you're tired of staying on the front end.  Welcome to the back-end, welcome to Node.-->
 
 # NodeJS
@@ -16,7 +16,7 @@
 <!-- framing the "why" in big-picture/real world examples -->
 *This workshop is important because:*
 
-JavaScript has been a computer language exclusive to the browser; that is, until Node was developed. Using Node's environment, we can use JavaScript as a general purpose language for any computer process.
+JavaScript was a computer language exclusive to the browser; that is, until Node was developed. Using Node's environment, we can use JavaScript as a general purpose language for any computer process.
 
 ### What are the objectives?
 <!-- specific/measurable goal for students to achieve -->
@@ -36,20 +36,20 @@ JavaScript has been a computer language exclusive to the browser; that is, until
 * **Navigate** the terminal
 * **Demonstrate** a proficiency in JavaScript
 
-<!-- 9:05 10 minutes -->
+<!-- 1:35 10 minutes -->
 ## What is Node?
 
-The makers of Node took javascript (which normally only runs in the browser) and made it available in your computer (on the server side). They took Google's V8 JavaScript Engine and gave it the ability to compile JS programs into machine code.  The first release was in 2009.
+The makers of Node took Javascript (which normally only runs in the browser) and made it available in your computer (on the server side). They took Google's V8 JavaScript Engine and gave it the ability to compile JS programs into machine code.  The first release was in 2009.
 
 #### Installing Node
 
 To check if we already have Node installed, type: ``node -v`` in terminal. If not, install it now preferably using `brew` or `apt-get` depending on your operating system.
 
-####Ryan Dahl
+#### Ryan Dahl
 
 Ryan Dahl is the creator of Node. Here he [demonstrates](https://www.youtube.com/watch?v=jo_B4LTHi3I) the technology for one of the first times publicly.
 
-####The Event Loop
+#### The Event Loop
 
 ![node event loop](http://i.stack.imgur.com/BTm1H.png)
 
@@ -96,7 +96,7 @@ node non-blocking-demo.js
 
 There are several different processes all happening simultaneously and asynchronously in tandem. One of the processes does not block any of the others. They all can run independently.
 
-<!-- 9:15 5 minutes -->
+<!-- 1:45 10 minutes -->
 
 #### Executing a JS program
 
@@ -115,7 +115,7 @@ node main.js
 
 ## Node's API Intro
 
-Let's take at some parts of the [Node API](https://nodejs.org/api/). We can jump into the Node environment by simply typing `node` in the terminals.
+Let's look at some parts of the [Node API](https://nodejs.org/api/). We can jump into the Node environment by simply typing `node` in the terminal.
 
 Try typing `global` into the node repl.
 
@@ -128,7 +128,7 @@ What parts of the API interest you? Let's write down a few modules that you'll h
 * HTTP
 * Module
 
-<!--9:20 10 minutes -->
+<!--1:55 10 minutes -->
 
 ## Assert
 
@@ -152,9 +152,9 @@ assert.equal(HK.country, NY.country);
 // throws Assertion Error
 ```
 
->Note: When using `const` or `let` you may run into this error: "SyntaxError: Block-scoped declarations (let, const, function, class) not yet supported outside strict mode", which means in order to use them you have to run the file in [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) by writing the string `'use strict'` at that top of the file. Strict mode throws more errors that could otherwise get unnoticed.
+>Note: When using `const` or `let` you may run into this error: "SyntaxError: Block-scoped declarations (let, const, function, class) not yet supported outside strict mode", which means in order to use them you have to run the file in [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) by writing the string `'use strict'` at the top of the file. Strict mode throws more errors that could otherwise get unnoticed.
 
-####TDD-style tests
+#### TDD-style tests
 
 Similarly, you can test a function's actual output against its expected output. (This is TDD!)
 
@@ -179,11 +179,11 @@ function exclaim(phrase) { return phrase + "!" }
 ```
 </details>
 
-<!-- 9:30 10 minutes -->
+<!-- 2:05 10 minutes -->
 
 ## File I/O
 
-####Writing to a file
+#### Writing to a file
 
 We can access the file system (fs) in node in order write to a file.
 
@@ -215,7 +215,7 @@ fs.readFile('my-journal.txt', 'utf8', function(err, data) {
 
 >Challenge: Use `fs` to write to a file called "dream-destination.txt" and fill it with the place you'd like to visit most in the world and why. Then read it back!
 
-<!--9:40 10 minutes -->
+<!--2:15 10 minutes -->
 
 ## HTTP Server
 
@@ -245,7 +245,7 @@ server.listen(PORT, function(){
 });
 ```
 
-Once we have our server running others on our same network can hit the server on another computer from the same network simply by going to the server's IP address followed by the port.
+Once we have our server running, others on our same network can hit our server simply by going to the server's IP address followed by the port.
 
 To find your IP address:
 
@@ -257,7 +257,7 @@ It will be the first IP address displayed.
 
 >Challenge: start a server on port 3000 that displays your name. Hit someone else's server from your computer.
 
-<!--9:50 10 minutes -->
+<!--2:25 10 minutes -->
 
 ## Code Organization
 
@@ -296,19 +296,19 @@ Now let's try `node lottery.js`. Did we win!?
 
 >Challenge: For the previous `server.js` example, split out the `handleRequests` function into a separate script and require it back into your server.
 
-<!--10:00 15 minutes -->
+<!--2:35 15 minutes -->
 
 ## Node's API Self-Exploration
 
 <!--
 
-ACTIVITY: Developer's vote on the parts of the API that seem most interesting. We split up the class into groups to do research (10m) on each and teach the rest of the class (5m) what they learned
+ACTIVITY: Developers vote on the parts of the API that seem most interesting. We split up the class into groups to do research (10m) on each and teach the rest of the class (5m) what they learned
 
 -->
 
 Time permitting, go back to a part of the [Node's API](https://nodejs.org/api/) your table is interested in researching. Take 10 minutes to do so and briefly summarize what you learned in writing.
 
-Suggested modules include (but not limited to):
+Suggested modules include (but are not limited to):
 
 * Debugger
 * Crypto
@@ -317,7 +317,7 @@ Suggested modules include (but not limited to):
 * Readline
 * URL
 
-<!--10:15 5 minutes -->
+<!--2:50 5 minutes -->
 
 ## Closing Thoughts
 
