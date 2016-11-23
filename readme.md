@@ -192,7 +192,7 @@ We can access the file system (fs) in node in order write to a file.
 ```js
 'use strict'
 const fs = require('fs');
-const entry = "It was the best of times, it was the worst of times..."
+const entry = "It was the best of times, it was the worst of times...";
 fs.writeFile('my-journal.txt', entry, function (err) {
   if (err) throw err;
   console.log("wrote to file!");
@@ -306,7 +306,7 @@ ACTIVITY: Developers vote on the parts of the API that seem most interesting. We
 
 -->
 
-Time permitting, go back to a part of the [Node's API](https://nodejs.org/api/) your table is interested in researching. Take 10 minutes to do so and briefly summarize what you learned in writing.
+Time permitting, go back to a part of the [Node's API](https://nodejs.org/api/) your table is interested in researching. Take a few minutes to do so and briefly summarize what you learned in writing.
 
 Suggested modules include (but are not limited to):
 
