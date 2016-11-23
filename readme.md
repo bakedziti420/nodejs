@@ -245,6 +245,10 @@ server.listen(PORT, function(){
 });
 ```
 
+<!--Already 2:37 here -->
+
+>Challenge: Start a server on port 3000 that displays your name.
+
 Once we have our server running, others on our same network can hit our server simply by going to the server's IP address followed by the port.
 
 To find your IP address:
@@ -255,7 +259,7 @@ ifconfig | grep "inet " | grep -v 127.0
 
 It will be the first IP address displayed.
 
->Challenge: start a server on port 3000 that displays your name. Hit someone else's server from your computer.
+>Challenge: Hit someone else's server from your computer.
 
 <!--2:25 10 minutes -->
 
