@@ -10,6 +10,8 @@
 <!--1:30 5 min -->
 <!-- Hook: So the name of this class is Web Development Immersive, and we're supposed to teach full-stack web development.  Raise your hand if you're tired of staying on the front end.  Welcome to the back-end, welcome to Node.-->
 
+<!--Time is tight here, don't over-explain any of the code, let devs figure things out during challenges -->
+
 # NodeJS
 
 ### Why is this important?
@@ -66,7 +68,7 @@ never stopping, he just keeps throwing papers on porches, so that by the time yo
 
 <!-- CFU Look at left-side of room and ask first person to say their name, and then ask the next person for their name, until they get to the end.  Time it.  Then ask everybody on the other side to say their names at the same time, but have to wait until I ask everyone.  Time that. -->
 
-####Example of non-blocking code
+#### Example of non-blocking code
 
 **non-blocking-demo.js**
 
@@ -93,6 +95,8 @@ setTimeout(function(){
 ```bash
 node non-blocking-demo.js
 ```
+
+<!--Ask devs what they think will print out with the above code, then test -->
 
 There are several different processes all happening simultaneously and asynchronously in tandem. One of the processes does not block any of the others. They all can run independently.
 
@@ -132,7 +136,7 @@ What parts of the API interest you? Let's write down a few modules that you'll h
 
 ## Assert
 
-####Truthiness
+#### Truthiness
 
 The `assert` module allows us to test the truthiness of a piece of data in addition to comparing an actual result with an expected result. Using this module is how you could start integrating simple tests into your code.
 
@@ -306,11 +310,11 @@ Now let's try `node lottery.js`. Did we win!?
 
 <!--
 
-ACTIVITY: Developers vote on the parts of the API that seem most interesting. We split up the class into groups to do research (10m) on each and teach the rest of the class (5m) what they learned
+ACTIVITY: Each squad selects a part of the API that seems most interesting. Squads do research (10m) on each and teach the rest of the class (5m) what they learned
 
 -->
 
-Time permitting, go back to a part of the [Node's API](https://nodejs.org/api/) your table is interested in researching. Take a few minutes to do so and briefly summarize what you learned in writing.
+Time permitting, go back to a part of the [Node's API](https://nodejs.org/api/) your squad is interested in researching. Take a few minutes to do so and briefly summarize what you learned in writing.
 
 Suggested modules include (but are not limited to):
 
