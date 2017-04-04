@@ -272,6 +272,7 @@ It will be the first IP address displayed.
 >Challenge: Hit someone else's server from your computer.
 
 <!--Starting this after lunch, finished last one at 12:25 -->
+<!--Actually 1:37, started indpendent practice at 1:46 -->
 <!--12:10 10 minutes -->
 
 ## Code Organization
@@ -312,6 +313,7 @@ Now let's try `node lottery.js`. Did we win!?
 >Challenge: For the previous `server.js` example, split out the `handleRequests` function into a separate script and require it back into your server.
 
 <!--Did this after lunch -->
+<!--Actually 1:55 -->
 <!--12:20 15 minutes -->
 
 ## Node's API Self-Exploration
@@ -333,6 +335,7 @@ Suggested modules include (but are not limited to):
 * Readline
 * URL
 
+<!--Actually 2:20 -->
 <!--12:35 5 minutes -->
 
 ## Closing Thoughts
