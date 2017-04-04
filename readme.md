@@ -7,6 +7,7 @@
 
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
+<!--Actually 11:23 -->
 <!--11:15 5 min -->
 <!-- Hook: So the name of this class is Web Development Immersive, and we're supposed to teach full-stack web development.  Raise your hand if you're tired of staying on the front end.  Welcome to the back-end, welcome to Node.-->
 
@@ -100,6 +101,7 @@ node non-blocking-demo.js
 
 There are several different processes all happening simultaneously and asynchronously in tandem. One of the processes does not block any of the others. They all can run independently.
 
+<!--Actually 11:36 while demoing, 11:39 after turning it over-->
 <!-- 11:30 10 minutes -->
 
 #### Executing a JS program
@@ -117,6 +119,8 @@ node main.js
 
 <!-- Turn it over to students with whiteboard instructions, stress that they should try to do it without looking at lecture. -->
 
+<!--11:43 -->
+
 ## Node's API Intro
 
 Let's look at some parts of the [Node API](https://nodejs.org/api/). We can jump into the Node environment by simply typing `node` in the terminal.
@@ -132,6 +136,7 @@ What parts of the API interest you? Let's write down a few modules that you'll h
 * HTTP
 * Module
 
+<!--11:46 -->
 <!--11:40 10 minutes -->
 
 ## Assert
@@ -219,6 +224,7 @@ fs.readFile('my-journal.txt', 'utf8', function(err, data) {
 
 >Challenge: Use `fs` to write to a file called "dream-destination.txt" and fill it with the place you'd like to visit most in the world and why. Then read it back!
 
+<!-- 12:09, 12:16 to start independent practice-->
 <!--12:00 10 minutes -->
 
 ## HTTP Server
@@ -265,6 +271,7 @@ It will be the first IP address displayed.
 
 >Challenge: Hit someone else's server from your computer.
 
+<!--Starting this after lunch, finished last one at 12:25 -->
 <!--12:10 10 minutes -->
 
 ## Code Organization
@@ -304,6 +311,7 @@ Now let's try `node lottery.js`. Did we win!?
 
 >Challenge: For the previous `server.js` example, split out the `handleRequests` function into a separate script and require it back into your server.
 
+<!--Did this after lunch -->
 <!--12:20 15 minutes -->
 
 ## Node's API Self-Exploration
