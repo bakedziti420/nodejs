@@ -7,7 +7,7 @@
 
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
-<!--1:30 5 min -->
+<!--11:15 5 min -->
 <!-- Hook: So the name of this class is Web Development Immersive, and we're supposed to teach full-stack web development.  Raise your hand if you're tired of staying on the front end.  Welcome to the back-end, welcome to Node.-->
 
 <!--Time is tight here, don't over-explain any of the code, let devs figure things out during challenges -->
@@ -38,14 +38,14 @@ JavaScript was a computer language exclusive to the browser; that is, until Node
 * **Navigate** the terminal
 * **Demonstrate** a proficiency in JavaScript
 
-<!-- 1:35 10 minutes -->
+<!-- 11:20 10 minutes -->
 ## What is Node?
 
 The makers of Node took Javascript (which normally only runs in the browser) and made it available in your computer (on the server side). They took Google's V8 JavaScript Engine and gave it the ability to compile JS programs into machine code.  The first release was in 2009.
 
 #### Installing Node
 
-To check if we already have Node installed, type: ``node -v`` in terminal. If not, install it now preferably using `brew` or `apt-get` depending on your operating system.
+To check if we already have Node installed, type: ``node -v`` in terminal. If not, install it now preferably using `brew` if you are on a Mac.
 
 #### Ryan Dahl
 
@@ -100,7 +100,7 @@ node non-blocking-demo.js
 
 There are several different processes all happening simultaneously and asynchronously in tandem. One of the processes does not block any of the others. They all can run independently.
 
-<!-- 1:45 10 minutes -->
+<!-- 11:30 10 minutes -->
 
 #### Executing a JS program
 
@@ -132,7 +132,7 @@ What parts of the API interest you? Let's write down a few modules that you'll h
 * HTTP
 * Module
 
-<!--1:55 10 minutes -->
+<!--11:40 10 minutes -->
 
 ## Assert
 
@@ -183,7 +183,7 @@ function exclaim(phrase) { return phrase + "!" }
 ```
 </details>
 
-<!-- 2:05 10 minutes -->
+<!-- 11:50 10 minutes -->
 
 ## File I/O
 
@@ -219,7 +219,7 @@ fs.readFile('my-journal.txt', 'utf8', function(err, data) {
 
 >Challenge: Use `fs` to write to a file called "dream-destination.txt" and fill it with the place you'd like to visit most in the world and why. Then read it back!
 
-<!--2:15 10 minutes -->
+<!--12:00 10 minutes -->
 
 ## HTTP Server
 
@@ -249,7 +249,7 @@ server.listen(PORT, function(){
 });
 ```
 
-<!--Already 2:37 here -->
+<!--Already 2:37 here (from 1:30 start WDI 2) -->
 
 >Challenge: Start a server on port 3000 that displays your name.
 
@@ -265,7 +265,7 @@ It will be the first IP address displayed.
 
 >Challenge: Hit someone else's server from your computer.
 
-<!--2:25 10 minutes -->
+<!--12:10 10 minutes -->
 
 ## Code Organization
 
@@ -304,7 +304,7 @@ Now let's try `node lottery.js`. Did we win!?
 
 >Challenge: For the previous `server.js` example, split out the `handleRequests` function into a separate script and require it back into your server.
 
-<!--2:35 15 minutes -->
+<!--12:20 15 minutes -->
 
 ## Node's API Self-Exploration
 
@@ -325,7 +325,7 @@ Suggested modules include (but are not limited to):
 * Readline
 * URL
 
-<!--2:50 5 minutes -->
+<!--12:35 5 minutes -->
 
 ## Closing Thoughts
 
