@@ -98,7 +98,7 @@ node non-blocking-demo.js
 ```
 
 <!--Ask devs what they think will print out with the above code, then test -->
-
+<!-- Zeb - should this trigger all functions? -->
 There are several different processes all happening simultaneously and asynchronously in tandem. One of the processes does not block any of the others. They all can run independently.
 
 <!--Actually 11:36 while demoing, 11:39 after turning it over-->
@@ -128,7 +128,7 @@ Let's look at some parts of the [Node API](https://nodejs.org/api/). We can jump
 Try typing `global` into the node repl.
 
 >What does it return? How is this similar or different to the browser console?
-
+<!-- Zeb - I'm not seeing these listed out in global? -->
 What parts of the API interest you? Let's write down a few modules that you'll have time to research at the end on your own. During this workshop we'll discuss:
 
 * Assert
