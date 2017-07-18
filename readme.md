@@ -98,7 +98,6 @@ node non-blocking-demo.js
 ```
 
 <!--Ask devs what they think will print out with the above code, then test -->
-<!-- Zeb - should this trigger all functions? -->
 There are several different processes all happening simultaneously and asynchronously in tandem. One of the processes does not block any of the others. They all can run independently.
 
 <!--Actually 11:36 while demoing, 11:39 after turning it over-->
@@ -125,11 +124,7 @@ node main.js
 
 Let's look at some parts of the [Node API](https://nodejs.org/api/). We can jump into the Node environment by simply typing `node` in the terminal.
 
-Try typing `global` into the node repl.
-
->What does it return? How is this similar or different to the browser console?
-<!-- Zeb - I'm not seeing these listed out in global? -->
-What parts of the API interest you? Let's write down a few modules that you'll have time to research at the end on your own. During this workshop we'll discuss:
+Let's look at a few modules that we'll research this workshop we'll discuss:
 
 * Assert
 * File System
@@ -277,7 +272,7 @@ It will be the first IP address displayed.
 
 ## Code Organization
 
-Once our files start getting larger it will be important to split them out into separate **modules**. Let's create a script `randomizer.js` that will also contain a function with the same name. If we export it, we can require it in any other script. 
+Once our files start getting larger it will be important to split them out into separate **modules**. Let's create a script called `randomizer.js` that will also contain a function with the same name. If we export it, we can require it in any other script. 
 
 **randomizer.js**
 
@@ -292,7 +287,9 @@ function randomizer(min, max) {
 module.exports = randomizer;
 ```
 
-Now assuming we want to run a lottery, we can use our randomizer to help us do so. All we need to do is require it with a relative path in order to import anything the `randomizer.js` script is exporting.
+Now, let's say we want to run a lottery. We can use our randomizer to help us do so - all we need to do is **require it** with a relative path, which will **import anything the `randomizer.js` script is exporting**.
+
+Make a new file called `lottery.js`:
 
 **lottery.js**
 
