@@ -93,10 +93,10 @@ setTimeout(function(){
 }, 4000)
 ```
 
-```bash
+<!-- ```bash
 node non-blocking-demo.js
 ```
-
+ -->
 <!--Ask devs what they think will print out with the above code, then test -->
 There are several different processes all happening simultaneously and asynchronously in tandem. One of the processes does not block any of the others. They all can run independently.
 
